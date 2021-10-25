@@ -1,6 +1,13 @@
 body {
   margin: 0;
+  background-color: #0c0808 !important;
+  color: #fff !important;
   font-family: Shabnam !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.rust{
+  font-weight: bold;
+  color: #D84800 !important;
 }

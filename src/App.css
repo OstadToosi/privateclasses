@@ -2,17 +2,20 @@
   text-align: center;
 }
 
-.fade-enter {
-  opacity: 0;
+
+.switch-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
 }
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 200ms;
+
+.switch-wrapper > div {
+  position: absolute;
 }
-.fade-exit {
-  opacity: 1;
-}
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 200ms;
+
+#basan-alert{
+  margin-top: 5px;
+  color: red;
+  font-size: 13px;
 }

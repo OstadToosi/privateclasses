@@ -11,3 +11,12 @@ body {
   font-weight: bold;
   color: #D84800 !important;
 }
+
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
+}

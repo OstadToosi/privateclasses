@@ -22,7 +22,7 @@ function App() {
     >
         <Route path="/privateclasses" exact component={MainPage} />
         <Route path="/privateclasses/register" exact component={Register} />
-        <Route path="/privateclasses/success/:name/:size" exact component={Success} />
+        <Route path="/privateclasses/success" exact component={Success} />
     </AnimatedSwitch >
   );
 }

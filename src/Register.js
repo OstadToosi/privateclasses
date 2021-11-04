@@ -14,12 +14,11 @@ function Register() {
   }, [name, size])
 
   const submitForm = () => {
-    history.push("/privateclasses/success/" + name + "/" + size);
+    history.push(`/privateclasses/success?name=${name}&size=${size}`);
   }
 
   return (
     <div>
-      <form className="mb-4" method="get" onSubmit={submitForm}>
         <label>
           نام و نام خانوادگی :
           <input type="text" id="name" className="form-control" onInput={(e) => {
@@ -37,8 +36,8 @@ function Register() {
           <p id="basan-alert">توجه : درصورت بزرگ بودن سایز باسن هزینه کلاس ها رایگان است</p>
         </label>
         <br />
-        <button className="btn btn-success mt-2">ثبت نام</button>
-      </form>
+        <button onClick={submitForm} className="btn btn-success my-2">ثبت نام</button>
+        <br />
       <img src="/privateclasses/toosi1.jfif" alt="toosi 1" />
       <Footer />
     </div>
